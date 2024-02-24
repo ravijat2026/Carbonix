@@ -1,0 +1,78 @@
+.calci {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7ec; /* Light green background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #2d6535; /* Dark green text */
+  margin-bottom: 20px;
+}
+
+/* Navigation Buttons */
+.navigation {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 0 10px;
+  background-color: #4caf50; /* Green button color */
+  color: #fff; /* White text */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Form Styles */
+form {
+  max-width: 400px;
+  background-color: #fff; /* White form background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label,
+input,
+select,
+button {
+  display: block;
+  margin: 10px 0;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Result Styles */
+#household-result,
+#cars-result,
+#bikes-result {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* SVG Image */
+svg {
+  width: 100px;
+  height: 100px;
+  fill: #4caf50; /* Green color for SVGs */
+}

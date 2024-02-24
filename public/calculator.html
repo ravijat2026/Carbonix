@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Carbon Footprint Calculator</title>
+  <link rel="stylesheet" href="navbar.css" class="style">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .calci {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 110vh; /* Adjust as needed */
+}
+      #household-result{
+        font-size: 2rem;
+      }
+      #cars-result{
+        font-size: 2rem;
+      }
+      #bikes-result{
+        font-size: 2rem;
+      }
+      #household-section{
+        width: 30%;
+      }
+      #cars-section{
+        width: 30%;
+      }
+      #bikes-section{
+        width: 30%;
+      }
+      @media (max-width:768px){
+        #household-section{
+        width: 70%;
+      }
+      #cars-section{
+        width: 70%;
+      }
+      #bikes-section{
+        width: 70%;
+      }
+      }
+    </style>
+
+
+</head>
+<body>
+  <header>
+
+<div id="menu-bar" class="fas fa-bars"></div>
+
+<a href="#" class="logo">Carbonix</a>
+<nav class="navbar">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#sources">Energy Sources</a>
+    <a href="./case_study.html">Case Study</a>
+    <a href="index.html#techno">Innovations</a>
+    <a href="calculator.html">Carbon Calculator</a>
+    <a href="./about.html">About us</a>
+</nav>
+<div class="icons">
+    <i class="fas fa-search" id="search-btn"></i>
+</div>
+
+</header>
+<div class="calci" id="calci">
+<h1>Carbon Footprint Calculator</h1>
+
+  <div class="navigation">
+    <button onclick="showSection('household')">Household</button>
+    <button onclick="showSection('cars')">Cars</button>
+    <button onclick="showSection('bikes')">Bikes</button>
+  </div>
+  
+  <div id="household-section">
+    <form id="household-form">
+      
+      
+      <label for="country">Select Country:</label>
+      <select id="country" name="country">
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+      </select>
+      
+      <label for="electricity">Electricity Consumption:</label>
+      <input type="number" id="electricity" name="electricity" placeholder="Enter kWh" required>
+      
+      <label for="electricity-unit">Select Unit:</label>
+      <select id="electricity-unit" name="electricity-unit">
+        <option value="kWh">kWh</option>
+      <option value="MWh">MWh</option>
+    </select>
+    
+    <label for="natural-gas">Natural Gas Usage:</label>
+    <input type="number" id="natural-gas" name="natural-gas" placeholder="Enter cubic meters" required>
+    
+    <label for="lpg">LPG Usage:</label>
+    <input type="number" id="lpg" name="lpg" placeholder="Enter kilograms" required>
+    
+    <button type="button" onclick="calculateCarbonFootprint()">Calculate</button>
+    
+  </form>
+  <div id="household-result"></div>
+</div>
+
+<div id="cars-section" style="display: none;">
+  <form id="cars-form">
+    <label for="car-model">Select Car Model:</label>
+    <select id="car-model" name="car-model">
+      <option value="sedan">Sedan</option>
+      <option value="suv">SUV</option>
+      <!-- aur cars dal sakti hain yaha -->
+    </select>
+
+    <label for="car-mileage">Enter Mileage (km/liter):</label>
+    <input type="number" id="car-mileage" name="car-mileage" placeholder="Enter mileage" required>
+    
+    <button type="button" onclick="calculateCarCarbonFootprint()">Calculate</button>
+  </form>
+  <div id="cars-result"></div>
+</div>
+
+<div id="bikes-section" style="display: none;">
+  <form id="bikes-form">
+    <label for="bike-model">Select Bike Model:</label>
+    <select id="bike-model" name="bike-model">
+      <option value="sport">Sport Bike</option>
+      <option value="cruiser">Cruiser Bike</option>
+      <!-- bike models aur  -->
+    </select>
+    
+    <label for="bike-mileage">Enter Mileage (km/liter):</label>
+    <input type="number" id="bike-mileage" name="bike-mileage" placeholder="Enter mileage" required>
+
+    <button type="button" onclick="calculateBikeCarbonFootprint()">Calculate</button>
+  </form>
+  <div id="bikes-result"></div>
+</div>
+</div>
+
+<script src="script.js"></script>
+<script src="calculator.js"></script>
+</body>
+</html>

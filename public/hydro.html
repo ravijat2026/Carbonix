@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydro Energy Website</title>
+
+    <link rel="stylesheet" href="navbar.css" class="style">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Reset default margin and padding */
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(131, 100%, 97%);
+    line-height: 1.6;
+  }
+
+  /* Main content styles */
+  section {
+    padding: 20px;
+    margin-top: 70px;
+    font-size: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  /* Project section styles */
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    transition: transform 0.3s ease;
+  }
+
+  .project:hover {
+    transform: translateY(-5px); /* Add hover effect */
+  }
+
+  .project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+
+  .project h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .project p {
+    color: #666;
+  }
+  .project p a{
+    color: #333;
+  }
+    </style>
+</head>
+<body>
+  <header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo">Carbonix</a>
+    <nav class="navbar">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#sources">Energy Sources</a>
+        <a href="./case_study.html">Case Study</a>
+        <a href="index.html#techno">Innovations</a>
+        <a href="calculator.html">Carbon Calculator</a>
+        <a href="./about.html">About us</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here....">
+        <label for="search bar" class="fas fa-search"></label>
+    </form>
+</header>
+
+<section id="about">
+    <h2>Hydro Energy</h2>
+    <p>
+        Hydro energy, also known as hydropower, is a renewable energy source that harnesses the power of flowing water to generate electricity. It is one of the oldest and most widely used forms of renewable energy, with hydroelectric plants found all over the world. Hydroelectricity is produced by directing water through turbines, which spin generators to produce electricity. It is a clean, reliable, and cost-effective source of energy that can help reduce greenhouse gas emissions and combat climate change.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+        <div class="project">
+            <img src="4.webp" alt="Project 1">
+            <h3>Project 1</h3>
+            <p><b>Sardar Sarovar Dam, India</b></p>
+        </div>
+        <div class="project">
+            <img src="5.webp" alt="Project 2">
+            <h3>Project 2</h3>
+            <p><b>Bhakra-Nangal Dam, India</b></p>
+        </div>
+        <div class="project">
+            <img src="6.webp" alt="Project 3">
+            <h3>Project 3</h3>
+            <p><b>Nagarjuna Sagar Dam</b></p>
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>

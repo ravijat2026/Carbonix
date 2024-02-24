@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbonix</title>
+    <link rel="shortcut icon" href="./logo1.jpg" type="image/svg+xml">
+     <!-- google font link  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" class="style">
+<link rel="stylesheet" href="navbar.css" class="style">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo">Carbonix</a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#sources">Energy Sources</a>
+            <a href="./case_study.html">Case Study</a>
+            <a href="#techno">Innovations</a>
+            <a href="calculator.html">Carbon Calculator</a>
+            <a href="./about.html">About us</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here....">
+            <label for="search bar" class="fas fa-search"></label>
+        </form>
+</header>
+   
+
+<!-- home page -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Empowering Clean Energy</h3>
+        <p>Fueling Tomorrow with Affordable, Clean Solutions</p>
+        <a href="#sources" class="btn">Discover more</a>
+    </div>
+    <div class="controls">
+        <span class="img-btn active" data-src="./img1.jpg"></span>
+        <span class="img-btn" data-src="./img2.jpg"></span>
+        <span class="img-btn" data-src="./img3.jpg"></span>
+        <span class="img-btn" data-src="./img4.jpg"></span>
+        <span class="img-btn" data-src="./img5.jpg"></span>
+        <span class="img-btn" data-src="./img6.jpg"></span>
+    </div>
+    <div class="image-container">
+        <img src="./img1.jpg" id="image-slider" alt="Image Slider">
+        <div class="arrow-container">
+            <i class="fas fa-chevron-left arrow left-arrow" onclick="changeImage(-1)"></i>
+            <i class="fas fa-chevron-right arrow right-arrow" onclick="changeImage(1)"></i>
+        </div>
+    </div>
+</section>
+
+<!-- Energy sources -->
+<h2 class="main-head">energy sources</h2>
+<section class="sources" id="sources">
+    <div class="icons" data-reveal="bottom">
+        <i class="fa-solid fa-solar-panel"></i>
+        <h3>Solar Energy</h3>
+        <a href="solar.html"><button class="learn-more">
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Learn More</span>
+          </button></a>
+    </div>
+    <div class="icons" data-reveal="bottom">
+        <i class="fa-solid fa-wind"></i>
+        <h3>Wind Energy</h3>
+        <a href="wind.html"><button class="learn-more">
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Learn More</span>
+          </button></a>
+    </div>
+    <div class="icons" data-reveal="bottom">
+        <i class="fa-solid fa-water"></i>
+        <h3>Hydro Energy</h3>
+        <a href="hydro.html"><button class="learn-more">
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Learn More</span>
+          </button></a>
+    </div>
+</section>
+
+<!-- Energy efficiency tips -->
+
+<section class="listing" aria-labelledby="listing-label">
+    <div class="container">
+        <ul class="grid-list">
+            <li>
+                <h2 class="section-subtitle title-lg" id="listing-label"
+                data-reveal="left">Energy Efficiency Tips</h2>
+                <p class="headline-md" data-reveal="left">Smart solutions for a sustainable tomorrow</p>
+            </li>
+            <li>
+                <div class="listing-card" data-reveal="bottom">
+                    <div>
+                        <h3 class="headline-sm card-title">Lighting Up Responsibly</h3>
+                        <a href="EET.html" class="btn2">More</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="listing-card" data-reveal="bottom">
+                    <div>
+                        <h3 class="headline-sm card-title">Smart Heating and Cooling</h3>
+                        <a href="EET.html" class="btn2">More</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="listing-card" data-reveal="bottom">
+                    <div>
+                        <h3 class="headline-sm card-title">Insulation and Weatherization</h3>
+                        <a href="EET.html" class="btn2">More</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="listing-card" data-reveal="bottom">
+                    <div>
+                        <h3 class="headline-sm card-title">Water Conservation Practices</h3>
+                        <a href="EET.html" class="btn2">More</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="listing-card" data-reveal="bottom">
+                    <div>
+                        <h3 class="headline-sm card-title">Sustainable Transportation</h3>
+                        <a href="EET.html" class="btn2">More</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="listing-card" data-reveal="bottom">
+                    <div>
+                        <h3 class="headline-sm card-title">Renewable Energy Adoption</h3>
+                        <a href="EET.html" class="btn2">More</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Technology section -->
+<h1 class="techno" id="techno">Technology Showcase: Innovations Shaping the Future</h1>
+<section id="technology" class="technology">
+    <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+          <li class="card">
+            <h2>Energy Storage Advancements</h2>
+            <span>Next-Gen Batteries</span>
+            <span>Hydrogen Storage</span>
+          </li>
+          <li class="card">
+            <h2> Smart Grids</h2>
+            <span>IoT Integration</span>
+            <span>Decentralized Energy Networks</span>
+          </li>
+          <li class="card">
+            <h2>Energy-Efficient Appliances</h2>
+            <span>Internet-Connected Devices</span>
+            <span>AI-Powered Efficiency</span>
+          </li>
+          <li class="card">
+            <h2>Innovative Solar Technologies</h2>
+            <span>Solar Paints and Films</span>
+            <span>Solar Tracking Systems</span>
+          </li>
+          <li class="card">
+            <h2>Wind Energy Innovations</h2>
+            <span>Vertical Axis Wind Turbines</span>
+            <span>Energy Storage Integration</span>
+          </li>
+          <li class="card">
+            <h2> Grid-Interactive Efficient Buildings</h2>
+            <span>Building-Integrated Photovoltaics</span>
+            <span>Demand Response Systems</span>
+          </li>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+</section>
+
+<!-- Policy advocay section -->
+<h1 class="techno">Policy and Advocacy: Shaping Sustainable Futures</h1>
+<section class="policy" id="policy">
+    <div class="row" data-reveal="left">
+        <div class="imageBook">
+            <img src="./banner-3-image.png" alt="book">
+        </div>
+        <div class="content" data-reveal="right">
+            <ul>
+            <li>
+                <p><span>Global Policy Insights : </span> international agreements like the Paris Agreement and United Nations Sustainable Development Goals, driving global efforts towards sustainable energy practices.</p>
+            </li>
+            <li>
+                <p><span>Local Initiatives Driving Change : </span>
+                    Investigate city-level policies and community-driven renewable energy projects contributing to local sustainability and environmental responsibility.</p>
+            </li>
+            <li>
+                <p><span>Advocacy Toolkit : </span>Access effective advocacy strategies and digital platforms empowering individuals and organizations to influence policy changes aligned with sustainable energy goals.</p>
+            </li>
+            <li>
+                <p><span>Supporting Sustainable Initiatives : </span>Understand the role of corporate social responsibility (CSR) and explore funding opportunities for clean energy projects, fostering collaboration between businesses and NGOs.</p>
+            </li>
+            <li>
+                <p><span>City-Level Clean Energy Policies : </span>Explore policies implemented at the city level that prioritize clean energy solutions, setting examples for innovative urban sustainability practices.</p>
+            </li>
+            <li>
+                <p><span>Collaboration with NGOs and Advocacy Groups : </span>Foster partnerships with non-governmental organizations (NGOs) and advocacy groups, contributing to collaborative efforts aimed at influencing policy changes and advancing sustainability.</p>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home"><i class="fas fa-chevron-right"></i>Home</a>
+                <a href="#sources"><i class="fas fa-chevron-right"></i>Energy sources</a>
+                <a href="case_study.html"><i class="fas fa-chevron-right"></i>case study</a>
+                <a href="#techno"><i class="fas fa-chevron-right"></i>Technology</a>
+                <a href="calculator.html"><i class="fas fa-chevron-right"></i>Carbon calculator</a>
+                <a href="about.html"><i class="fas fa-chevron-right"></i>About Us</a>
+            </div>
+            <div class="box">
+                <h3>Our Services</h3>
+                <a href="#footer"><i class="fas fa-chevron-right"></i>EcoServe</a>
+                <a href="#footer"><i class="fas fa-chevron-right"></i>RenewX</a>
+                <a href="#footer"><i class="fas fa-chevron-right"></i>Sustainify</a>
+                <a href="#footer"><i class="fas fa-chevron-right"></i>Greenergy</a>
+                <a href="#footer"><i class="fas fa-chevron-right"></i>Cleanease</a>
+            </div>
+            <div class="box">
+                <h3>Conatact Info</h3>
+                <a href="#footer"><i class="fas fa-phone"></i>+123-456-7890</a>
+                <a href="#footer"><i class="fas fa-phone"></i>+111-222-333</a>
+                <a href="#footer"><i class="fas fa-envelope"></i>nebula@gmail.com</a>
+                <a href="#footer"><i class="fas fa-envelope"></i>neb_12ula@gmail.com</a>
+                <a href="#footer"><i class="fas fa-map"></i>Mumbai,india-400104</a>
+            </div>
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#footer"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="#footer"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#footer"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#footer"><i class="fab fa-linkedin"></i>linkedin</a>
+                <a href="#footer"><i class="fab fa-pinterest"></i>pinterest</a>
+            </div>
+        </div>
+        <div class="credit">Created by <span>Nebula</span> | all rights reserved.</div>
+     </section>
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
